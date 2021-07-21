@@ -2,15 +2,24 @@
     box-sizing: border-box;
     background-color:azure;
 }
-
+header {
+    text-align: center;
+}
 .question_box {
-    margin: 0 auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
 }
 .answer {
+    max-width: 500px;
     display: grid;
     grid-template-areas: 
     "A B"
     "C D" ;
+}
+ul {
+    list-style-type: none;
 }
 
 .A {
