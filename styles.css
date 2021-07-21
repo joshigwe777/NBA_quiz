@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    background-color:azure;
+}
+
+.question_box {
+    margin: 0 auto;
+}
+.answer {
+    display: grid;
+    grid-template-areas: 
+    "A B"
+    "C D" ;
+}
+
+.A {
+    grid-area: A;
+}
+
+.B {
+    grid-area: B;
+}
+
+.C {
+    grid-area: C;
+}
+
+.D {
+    grid-area: D;
+}
