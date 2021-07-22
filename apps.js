@@ -5,7 +5,10 @@ const question2 = document.getElementById("question2");
 
 const answers = {
     one: "D",
-    two: "B"
+    two: "B",
+    three: "B",
+    four: "B",
+    five: "C",
 };
 
 
