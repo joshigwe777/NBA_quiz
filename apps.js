@@ -1,4 +1,4 @@
-const answer = document.getElementsByClassName("answer");
+const answer = document.querySelector("answer");
 const answer1 = document.getElementById('answer1');
 
 const question1 = document.getElementById("question1");
@@ -14,7 +14,7 @@ const question10 = document.getElementById("question10");
 
 const scoreboard = document.querySelector("#score");
 const answers = document.querySelectorAll("answers");
-const questions = [question1, question2, question3];
+const questions = [question1, question2, question3, question4, question5, question6, question7, question8, question9, question10];
 let score = 0;
 let questionboard = document.querySelector(".questions");
 
@@ -32,10 +32,9 @@ function changeQuestion(current, next) {
     current.style.display = "none";
     next.style.display = "";
 }
-
+let q = 0;
     questionboard.addEventListener("click", (e) => {
         let selection = e.target;
-        let q = 0;
             if(selection.className === correct_answers[q]) {
                 selection.className = "correct-selection";
                 score+=1;
@@ -45,10 +44,15 @@ function changeQuestion(current, next) {
                 selection.className = "wrong-selection";
             }
             setTimeout(() => {
-                questions[q].style.display = "none";
-                questions[q+1].style.display = "";
+                if(q===9) {
+                    alert(`Your final score is ${score}`);
+                } else {
+                    questions[q].style.display = "none";
+                    questions[q+1].style.display = "";
+                    q++;
+                }
             }, 1000);
-            q++;
+            
         }
         
     

@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
-    background-color:azure;
+    background-color:rgb(29, 66, 138);
+    color: white;
 }
 header {
     text-align: center;
@@ -22,6 +23,11 @@ ul {
     list-style-type: none;
 }
 
+.A, .B, .C, .D {
+    margin: 3px;
+    padding: 3px;
+}
+
 .A {
     grid-area: A;
 }
@@ -40,11 +46,13 @@ ul {
 
 .correct-selection {
     background-color: rgb(14, 233, 14);
+    border: solid black 1px;
 
 }
 
 .wrong-selection {
-    background-color: red;
+    background-color: rgb(200, 16,46);
+    border: solid black 1px;
 }
 
 .scoreboard {
