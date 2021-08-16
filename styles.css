@@ -11,6 +11,10 @@ header {
     margin-left: auto;
     margin-right: auto;
     max-width: 500px;
+    border: solid white 2px;
+    border-radius: 5px;
+    padding: 1rem;
+
 }
 .answer {
     max-width: 500px;
@@ -24,8 +28,17 @@ ul {
 }
 
 .A, .B, .C, .D {
-    margin: 3px;
-    padding: 3px;
+    margin: 6px;
+    padding: 5px;
+    border: solid white .5px;
+    border-radius: 4px;;
+}
+.A:hover,
+.B:hover,
+.C:hover,
+.D:hover {
+    border: solid greenyellow .5px;
+    color:greenyellow;
 }
 
 .A {
@@ -46,7 +59,8 @@ ul {
 
 .correct-selection {
     background-color: rgb(14, 233, 14);
-    border: solid black 1px;
+    border-radius: 5px;
+    /* border: solid black 1px; */
 
 }
 
